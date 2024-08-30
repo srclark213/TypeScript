@@ -1387,19 +1387,19 @@ interface RegExpExecArray {
 >array : Symbol(array, Decl(1.0lib-noErrors.ts, 819, 53))
 >thisArg : Symbol(thisArg, Decl(1.0lib-noErrors.ts, 819, 82))
 
-    reduce(callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
+    reduce(callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
 >reduce : Symbol(RegExpExecArray.reduce, Decl(1.0lib-noErrors.ts, 819, 108))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 820, 11))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 820, 24))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 820, 24))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 820, 43))
 >currentIndex : Symbol(currentIndex, Decl(1.0lib-noErrors.ts, 820, 62))
 >array : Symbol(array, Decl(1.0lib-noErrors.ts, 820, 84))
 >initialValue : Symbol(initialValue, Decl(1.0lib-noErrors.ts, 820, 109))
 
-    reduceRight(callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
+    reduceRight(callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
 >reduceRight : Symbol(RegExpExecArray.reduceRight, Decl(1.0lib-noErrors.ts, 820, 135))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 821, 16))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 821, 29))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 821, 29))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 821, 48))
 >currentIndex : Symbol(currentIndex, Decl(1.0lib-noErrors.ts, 821, 67))
 >array : Symbol(array, Decl(1.0lib-noErrors.ts, 821, 89))
@@ -1960,10 +1960,10 @@ interface Array<T> {
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduce(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
 >reduce : Symbol(Array.reduce, Decl(1.0lib-noErrors.ts, 1098, 93), Decl(1.0lib-noErrors.ts, 1105, 120))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 1105, 11))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 1105, 24))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 1105, 24))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 1105, 41))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))
@@ -1980,11 +1980,11 @@ interface Array<T> {
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 >reduce : Symbol(Array.reduce, Decl(1.0lib-noErrors.ts, 1098, 93), Decl(1.0lib-noErrors.ts, 1105, 120))
 >U : Symbol(U, Decl(1.0lib-noErrors.ts, 1111, 11))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 1111, 14))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 1111, 27))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 1111, 27))
 >U : Symbol(U, Decl(1.0lib-noErrors.ts, 1111, 11))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 1111, 44))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))
@@ -2001,10 +2001,10 @@ interface Array<T> {
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. 
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduceRight(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
 >reduceRight : Symbol(Array.reduceRight, Decl(1.0lib-noErrors.ts, 1111, 122), Decl(1.0lib-noErrors.ts, 1118, 125))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 1118, 16))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 1118, 29))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 1118, 29))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 1118, 46))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))
@@ -2021,11 +2021,11 @@ interface Array<T> {
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. 
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduceRight<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduceRight<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 >reduceRight : Symbol(Array.reduceRight, Decl(1.0lib-noErrors.ts, 1111, 122), Decl(1.0lib-noErrors.ts, 1118, 125))
 >U : Symbol(U, Decl(1.0lib-noErrors.ts, 1124, 16))
 >callbackfn : Symbol(callbackfn, Decl(1.0lib-noErrors.ts, 1124, 19))
->previousValue : Symbol(previousValue, Decl(1.0lib-noErrors.ts, 1124, 32))
+>accumulator : Symbol(accumulator, Decl(1.0lib-noErrors.ts, 1124, 32))
 >U : Symbol(U, Decl(1.0lib-noErrors.ts, 1124, 16))
 >currentValue : Symbol(currentValue, Decl(1.0lib-noErrors.ts, 1124, 49))
 >T : Symbol(T, Decl(1.0lib-noErrors.ts, 980, 16))

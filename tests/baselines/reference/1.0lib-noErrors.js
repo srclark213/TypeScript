@@ -821,8 +821,8 @@ interface RegExpExecArray {
     forEach(callbackfn: (value: string, index: number, array: string[]) => void, thisArg?: any): void;
     map(callbackfn: (value: string, index: number, array: string[]) => any, thisArg?: any): any[];
     filter(callbackfn: (value: string, index: number, array: string[]) => boolean, thisArg?: any): string[];
-    reduce(callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
-    reduceRight(callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
+    reduce(callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
+    reduceRight(callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: string[]) => any, initialValue?: any): any;
 }
 
 
@@ -1106,26 +1106,26 @@ interface Array<T> {
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduce(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
     /**
       * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 
     /** 
       * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. 
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduceRight(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
     /** 
       * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array. 
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
-    reduceRight<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduceRight<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 
     /**
       * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
@@ -1143,7 +1143,8 @@ declare var Array: {
     <T>(...items: T[]): T[];
     isArray(arg: any): boolean;
     prototype: Array<any>;
-}
+}
+
 
 //// [1.0lib-noErrors.js]
 /* *****************************************************************************
