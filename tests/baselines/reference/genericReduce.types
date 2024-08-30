@@ -42,11 +42,11 @@ var n1 = b.reduce((x, y) => x + y);
 >   : ^^^^^^
 >b.reduce((x, y) => x + y) : number
 >                          : ^^^^^^
->b.reduce : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>b.reduce : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >         : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >b : number[]
 >  : ^^^^^^^^
->reduce : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>reduce : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >       : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >(x, y) => x + y : (x: number, y: number) => number
 >                : ^ ^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^
@@ -66,11 +66,11 @@ var n2 = b.reduceRight((x, y) => x + y);
 >   : ^^^^^^
 >b.reduceRight((x, y) => x + y) : number
 >                               : ^^^^^^
->b.reduceRight : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>b.reduceRight : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >              : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >b : number[]
 >  : ^^^^^^^^
->reduceRight : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>reduceRight : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >            : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >(x, y) => x + y : (x: number, y: number) => number
 >                : ^ ^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^
@@ -138,11 +138,11 @@ var n3 = b.reduce<string>( (x, y) => x + y, ""); // Initial value is of type str
 >   : ^^^^^^
 >b.reduce<string>( (x, y) => x + y, "") : string
 >                                       : ^^^^^^
->b.reduce : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>b.reduce : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >         : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >b : number[]
 >  : ^^^^^^^^
->reduce : { (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
+>reduce : { (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number; (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number; <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U; }
 >       : ^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >(x, y) => x + y : (x: string, y: number) => string
 >                : ^ ^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^

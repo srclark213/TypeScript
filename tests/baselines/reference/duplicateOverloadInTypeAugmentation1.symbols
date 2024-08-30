@@ -5,10 +5,10 @@ interface Array<T> {
 >Array : Symbol(Array, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 0))
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))
 
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T,
+    reduce(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T,
 >reduce : Symbol(Array.reduce, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 20), Decl(duplicateOverloadInTypeAugmentation1.ts, 2, 29))
 >callbackfn : Symbol(callbackfn, Decl(duplicateOverloadInTypeAugmentation1.ts, 1, 11))
->previousValue : Symbol(previousValue, Decl(duplicateOverloadInTypeAugmentation1.ts, 1, 24))
+>accumulator : Symbol(accumulator, Decl(duplicateOverloadInTypeAugmentation1.ts, 1, 24))
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))
 >currentValue : Symbol(currentValue, Decl(duplicateOverloadInTypeAugmentation1.ts, 1, 41))
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))
@@ -22,11 +22,11 @@ interface Array<T> {
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))
 
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U,
+    reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U,
 >reduce : Symbol(Array.reduce, Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --), Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 20), Decl(duplicateOverloadInTypeAugmentation1.ts, 2, 29))
 >U : Symbol(U, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 11))
 >callbackfn : Symbol(callbackfn, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 14))
->previousValue : Symbol(previousValue, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 27))
+>accumulator : Symbol(accumulator, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 27))
 >U : Symbol(U, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 11))
 >currentValue : Symbol(currentValue, Decl(duplicateOverloadInTypeAugmentation1.ts, 3, 44))
 >T : Symbol(T, Decl(lib.es5.d.ts, --, --), Decl(duplicateOverloadInTypeAugmentation1.ts, 0, 16))

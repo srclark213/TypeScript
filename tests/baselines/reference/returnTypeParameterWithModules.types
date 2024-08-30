@@ -16,7 +16,7 @@ module M1 {
 >Array.prototype.reduce.apply(ar, e ? [f, e] : [f]) : any
 >Array.prototype.reduce.apply : (this: Function, thisArg: any, argArray?: any) => any
 >                             : ^    ^^        ^^       ^^   ^^        ^^^   ^^^^^   
->Array.prototype.reduce : { (callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: any[]) => any): any; (callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: any[]) => any, initialValue: any): any; <U>(callbackfn: (previousValue: U, currentValue: any, currentIndex: number, array: any[]) => U, initialValue: U): U; }
+>Array.prototype.reduce : { (callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: any[]) => any): any; (callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: any[]) => any, initialValue: any): any; <U>(callbackfn: (accumulator: U, currentValue: any, currentIndex: number, array: any[]) => U, initialValue: U): U; }
 >                       : ^^^          ^^^             ^^^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >Array.prototype : any[]
 >                : ^^^^^
@@ -24,7 +24,7 @@ module M1 {
 >      : ^^^^^^^^^^^^^^^^
 >prototype : any[]
 >          : ^^^^^
->reduce : { (callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: any[]) => any): any; (callbackfn: (previousValue: any, currentValue: any, currentIndex: number, array: any[]) => any, initialValue: any): any; <U>(callbackfn: (previousValue: U, currentValue: any, currentIndex: number, array: any[]) => U, initialValue: U): U; }
+>reduce : { (callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: any[]) => any): any; (callbackfn: (accumulator: any, currentValue: any, currentIndex: number, array: any[]) => any, initialValue: any): any; <U>(callbackfn: (accumulator: U, currentValue: any, currentIndex: number, array: any[]) => U, initialValue: U): U; }
 >       : ^^^          ^^^             ^^^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^^^^^^^^          ^^^             ^^^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^^^            ^^^^^^^^^^^^^^ ^^          ^^^             ^^^^^            ^^^^^^^            ^^      ^^     ^^^^^^^^^^^^^^^            ^^^^^^^^^^
 >apply : (this: Function, thisArg: any, argArray?: any) => any
 >      : ^    ^^        ^^       ^^   ^^        ^^^   ^^^^^   

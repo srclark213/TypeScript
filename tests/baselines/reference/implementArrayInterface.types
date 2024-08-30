@@ -175,12 +175,12 @@ declare class MyArray<T> implements Array<T> {
 >thisArg : any
 >        : ^^^
 
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
->reduce : { (callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
+    reduce(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+>reduce : { (callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
 >       : ^^^          ^^                                                                          ^^            ^^^ ^^^ ^^^ ^^          ^^                                                                          ^^            ^^ ^^^ ^^^
->callbackfn : (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T
+>callbackfn : (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T
 >           : ^             ^^ ^^            ^^ ^^            ^^      ^^     ^^   ^^^^^ 
->previousValue : T
+>accumulator : T
 >              : ^
 >currentValue : T
 >             : ^
@@ -191,12 +191,12 @@ declare class MyArray<T> implements Array<T> {
 >initialValue : T
 >             : ^
 
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
->reduce : { (callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
+    reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+>reduce : { (callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
 >       : ^^^          ^^                                                                          ^^            ^^^ ^^^ ^^^ ^^          ^^                                                                          ^^            ^^ ^^^ ^^^
->callbackfn : (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U
+>callbackfn : (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U
 >           : ^             ^^ ^^            ^^ ^^            ^^      ^^     ^^   ^^^^^ 
->previousValue : U
+>accumulator : U
 >              : ^
 >currentValue : T
 >             : ^
@@ -207,12 +207,12 @@ declare class MyArray<T> implements Array<T> {
 >initialValue : U
 >             : ^
 
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
->reduceRight : { (callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
+    reduceRight(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+>reduceRight : { (callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
 >            : ^^^          ^^                                                                          ^^            ^^^ ^^^ ^^^ ^^          ^^                                                                          ^^            ^^ ^^^ ^^^
->callbackfn : (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T
+>callbackfn : (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T
 >           : ^             ^^ ^^            ^^ ^^            ^^      ^^     ^^   ^^^^^ 
->previousValue : T
+>accumulator : T
 >              : ^
 >currentValue : T
 >             : ^
@@ -223,12 +223,12 @@ declare class MyArray<T> implements Array<T> {
 >initialValue : T
 >             : ^
 
-    reduceRight<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
->reduceRight : { (callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
+    reduceRight<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+>reduceRight : { (callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T; <U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U; }
 >            : ^^^          ^^                                                                          ^^            ^^^ ^^^ ^^^ ^^          ^^                                                                          ^^            ^^ ^^^ ^^^
->callbackfn : (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U
+>callbackfn : (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U
 >           : ^             ^^ ^^            ^^ ^^            ^^      ^^     ^^   ^^^^^ 
->previousValue : U
+>accumulator : U
 >              : ^
 >currentValue : T
 >             : ^

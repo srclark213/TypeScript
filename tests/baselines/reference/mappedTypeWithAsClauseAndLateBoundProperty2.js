@@ -46,14 +46,14 @@ export declare const thing: {
         (predicate: (value: number, index: number, array: number[]) => unknown, thisArg?: any): number[];
     };
     reduce: {
-        (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number;
-        (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number;
-        <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U;
+        (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number;
+        (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number;
+        <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U;
     };
     reduceRight: {
-        (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number): number;
-        (callbackfn: (previousValue: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number;
-        <U>(callbackfn: (previousValue: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U;
+        (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number): number;
+        (callbackfn: (accumulator: number, currentValue: number, currentIndex: number, array: number[]) => number, initialValue: number): number;
+        <U>(callbackfn: (accumulator: U, currentValue: number, currentIndex: number, array: number[]) => U, initialValue: U): U;
     };
     find: {
         <S extends number>(predicate: (value: number, index: number, obj: number[]) => value is S, thisArg?: any): S;

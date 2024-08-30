@@ -146,10 +146,10 @@ declare class MyArray<T> implements Array<T> {
 >thisArg : Symbol(thisArg, Decl(implementArrayInterface.ts, 22, 72))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 
-    reduce(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduce(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
 >reduce : Symbol(MyArray.reduce, Decl(implementArrayInterface.ts, 22, 93), Decl(implementArrayInterface.ts, 23, 120))
 >callbackfn : Symbol(callbackfn, Decl(implementArrayInterface.ts, 23, 11))
->previousValue : Symbol(previousValue, Decl(implementArrayInterface.ts, 23, 24))
+>accumulator : Symbol(accumulator, Decl(implementArrayInterface.ts, 23, 24))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 >currentValue : Symbol(currentValue, Decl(implementArrayInterface.ts, 23, 41))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
@@ -161,11 +161,11 @@ declare class MyArray<T> implements Array<T> {
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 
-    reduce<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduce<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 >reduce : Symbol(MyArray.reduce, Decl(implementArrayInterface.ts, 22, 93), Decl(implementArrayInterface.ts, 23, 120))
 >U : Symbol(U, Decl(implementArrayInterface.ts, 24, 11))
 >callbackfn : Symbol(callbackfn, Decl(implementArrayInterface.ts, 24, 14))
->previousValue : Symbol(previousValue, Decl(implementArrayInterface.ts, 24, 27))
+>accumulator : Symbol(accumulator, Decl(implementArrayInterface.ts, 24, 27))
 >U : Symbol(U, Decl(implementArrayInterface.ts, 24, 11))
 >currentValue : Symbol(currentValue, Decl(implementArrayInterface.ts, 24, 44))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
@@ -177,10 +177,10 @@ declare class MyArray<T> implements Array<T> {
 >U : Symbol(U, Decl(implementArrayInterface.ts, 24, 11))
 >U : Symbol(U, Decl(implementArrayInterface.ts, 24, 11))
 
-    reduceRight(callbackfn: (previousValue: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
+    reduceRight(callbackfn: (accumulator: T, currentValue: T, currentIndex: number, array: T[]) => T, initialValue?: T): T;
 >reduceRight : Symbol(MyArray.reduceRight, Decl(implementArrayInterface.ts, 24, 122), Decl(implementArrayInterface.ts, 25, 125))
 >callbackfn : Symbol(callbackfn, Decl(implementArrayInterface.ts, 25, 16))
->previousValue : Symbol(previousValue, Decl(implementArrayInterface.ts, 25, 29))
+>accumulator : Symbol(accumulator, Decl(implementArrayInterface.ts, 25, 29))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 >currentValue : Symbol(currentValue, Decl(implementArrayInterface.ts, 25, 46))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
@@ -192,11 +192,11 @@ declare class MyArray<T> implements Array<T> {
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
 
-    reduceRight<U>(callbackfn: (previousValue: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
+    reduceRight<U>(callbackfn: (accumulator: U, currentValue: T, currentIndex: number, array: T[]) => U, initialValue: U): U;
 >reduceRight : Symbol(MyArray.reduceRight, Decl(implementArrayInterface.ts, 24, 122), Decl(implementArrayInterface.ts, 25, 125))
 >U : Symbol(U, Decl(implementArrayInterface.ts, 26, 16))
 >callbackfn : Symbol(callbackfn, Decl(implementArrayInterface.ts, 26, 19))
->previousValue : Symbol(previousValue, Decl(implementArrayInterface.ts, 26, 32))
+>accumulator : Symbol(accumulator, Decl(implementArrayInterface.ts, 26, 32))
 >U : Symbol(U, Decl(implementArrayInterface.ts, 26, 16))
 >currentValue : Symbol(currentValue, Decl(implementArrayInterface.ts, 26, 49))
 >T : Symbol(T, Decl(implementArrayInterface.ts, 0, 22))
